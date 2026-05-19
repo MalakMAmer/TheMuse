@@ -1,0 +1,125 @@
+
+/* Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Felipa&family=Lavishly+Yours&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    /* Colors */
+
+    --primary: #FFB6C1;
+    --secondary: #FFA500;
+    --secondary-darker: #ba7900;
+    --tertiary: #FFD1DC;
+    --neutral:#FDFCFB;
+    --dark-pink: #874E58;
+    --light-black-text: #514345;
+    --light-pink-dark-text: #664348;
+
+
+    /* Fonts */
+    --font-heading: "Playfair Display", serif;
+    --font-body: "Inter", sans-serif;
+    --playfair: "Playfair Display", serif;
+    --inter: "Inter", sans-serif;
+    --fancy: "Lavishly Yours", "Playfair Display" ,cursive;
+    --Lavishly: "Lavishly Yours", "Playfair Display" ,cursive;
+    --flipa: "Felipa", "Playfair Display" ,serif;
+    --Agba: "Agbalumo", "Playfair Display" , system-ui;
+    --moon: "Moon Dance", "Playfair Display", cursive;
+
+    /* Font colors */
+    --white: #FFF;
+    --black: #000;
+
+
+    /* Font Weights */
+
+    --text-hero: 3rem;
+    --text-title: 2rem;
+    --text-body: 1rem;
+
+    /* Shadows */
+    --shadow-sm: 0px 2px 8px rgba(0, 0, 0, 0.08);
+    --shadow-md: 0px 10px 30px rgba(50, 50, 93, 0.15);
+    --shadow-lg: 0px 20px 60px rgba(0, 0, 0, 0.2);
+
+    /* Spacing */
+
+    --space-1: 4px;
+    --space-2: 8px;
+    --space-3: 12px;
+    --space-4: 16px;
+    --space-5: 24px;
+    --space-6: 32px;
+    --space-7: 48px;
+    --space-8: 64px;
+
+    /* Containers Width */
+
+    --container-sm: 600px;
+    --container-md: 900px;
+    --container-lg: 1200px;
+    --container-xl: 1400px;
+
+    /* shadows */
+    --pink-shadow:rgba(255, 209, 220, 0.1) 0px 1px 1px 0px inset,
+                  rgba(255, 209, 220, 0.25) 0px 50px 100px -20px,
+                  rgba(255, 209, 220, 0.3) 0px 30px 60px -30px;
+
+    --orange-shadow:rgba(255, 165, 0, 0.1) 0px 1px 1px 0px inset,
+                    rgba(255, 165, 0, 0.25) 0px 50px 100px -20px,
+                    rgba(255, 165, 0, 0.3) 0px 30px 60px -30px;
+    --orange-shadow-lighter: rgba(255, 165, 0, 0.1) 0px 1px 1px 0px inset,
+                    rgba(255, 165, 0, 0.15) 0px 50px 80px -20px,
+                    rgba(255, 165, 0, 0.1) 0px 30px 30px -30px;
+
+    --normal-shadow:rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+                    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+                    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+        
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--neutral);
+    color: var(--black);
+}
+
+
+h1,h2,h3,h4 {
+    font-family: var(--font-heading);
+}
+
+h1 {
+    font-size: var(--text-hero);
+}
+
+h2 {
+    font-size: var(--text-title);
+}
+
+p {
+    font-size: var(--text-body);
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

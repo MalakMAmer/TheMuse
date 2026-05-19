@@ -1,0 +1,318 @@
+
+
+/* Buttons */
+
+
+/* .Primary{
+    width: 180px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background: #FFB6C1;
+    background: linear-gradient(70deg, rgba(255, 182, 193, 1) 0%, rgba(255, 165, 0, 1) 100%);
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, 
+                rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, 
+                rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    transition: background ease 300ms;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+} */
+
+.Primary {
+    width: fit-content;
+    padding: 10px 30px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #FFB6C1 0%, #874E58 100%);
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 600;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow:
+        rgba(255, 182, 193, 0.25) 0px 15px 35px,
+        #874E5840 0px 5px 15px,
+        inset rgba(255, 255, 255, 0.35) 0px 1px 1px;
+    backdrop-filter: blur(8px);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.35s ease;
+}
+.Primary::before {
+    content: "";
+    position: absolute;
+    top: -120%;
+    left: -40%;
+    width: 60%;
+    height: 300%;
+    background: rgba(255, 255, 255, 0.18);
+    transform: rotate(25deg);
+    transition: all 0.6s ease;
+}
+.Primary:hover {
+    transform: translateY(-4px) scale(1.03);
+    box-shadow:
+        rgba(255, 182, 193, 0.35) 0px 20px 45px,
+        rgba(255, 165, 0, 0.3) 0px 10px 20px;
+    background: linear-gradient(135deg, #ffc3cd 0%, #ffb733 100%);
+}
+.Primary:hover::before {
+    left: 120%;
+}
+.Primary:active {
+    transform: scale(0.98);
+}
+
+
+.PrimaryBtn {
+    width: 180px;
+    height: 30px;
+    border-radius: 20px;
+    background: #FFB6C1;
+    background: linear-gradient(70deg, rgba(255, 182, 193, 1) 0%, rgba(255, 165, 0, 1) 100%);
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+        rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    transition: background ease 300ms;
+    color: white;
+    text-align: center;
+}
+.Primary:hover{
+    background: #FFB6C1;
+    cursor: pointer;
+    box-shadow: rgba(255, 255, 255, 0.15) 0px 1px 1px 0px inset,
+                rgba(50, 50, 93, 0.30) 0px 60px 120px -20px,
+                rgba(0, 0, 0, 0.35) 0px 40px 80px -30px;
+}
+.Primary:active{
+    background: #FFB6C1;
+    opacity: 0.9;
+    cursor: pointer;
+    box-shadow: rgba(255, 255, 255, 0.15) 0px 1px 1px 0px inset,
+        rgba(50, 50, 93, 0.30) 0px 60px 120px -20px,
+        rgba(0, 0, 0, 0.35) 0px 40px 80px -30px;
+}
+.PrimaryBtn:hover {
+    background: #FFB6C1;
+    cursor: pointer;
+    box-shadow: rgba(255, 255, 255, 0.15) 0px 1px 1px 0px inset,
+        rgba(50, 50, 93, 0.30) 0px 60px 120px -20px,
+        rgba(0, 0, 0, 0.35) 0px 40px 80px -30px;
+}
+
+
+.Secondary{
+    width: 180px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #874E58;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+        rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    transition: background ease 300ms;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+.SecondaryBtn{
+    width: 180px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: #874E58;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+                rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+                rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    transition: background ease 300ms;
+    text-align: center;
+}
+.Secondary:hover{
+    opacity: 0.9;
+    cursor: pointer;
+    box-shadow: rgba(255, 255, 255, 0.15) 0px 1px 1px 0px inset,
+                rgba(50, 50, 93, 0.30) 0px 60px 120px -20px,
+                rgba(0, 0, 0, 0.35) 0px 40px 80px -30px;
+}
+.Secondary:active {
+    opacity: 0.8;
+    cursor: pointer;
+    box-shadow: rgba(255, 255, 255, 0.15) 0px 1px 1px 0px inset,
+        rgba(50, 50, 93, 0.30) 0px 60px 120px -20px,
+        rgba(0, 0, 0, 0.35) 0px 40px 80px -30px;
+}
+.SecondaryBtn:hover {
+    opacity: 0.9;
+    cursor: pointer;
+    box-shadow: rgba(255, 255, 255, 0.15) 0px 1px 1px 0px inset,
+        rgba(50, 50, 93, 0.30) 0px 60px 120px -20px,
+        rgba(0, 0, 0, 0.35) 0px 40px 80px -30px;
+}
+
+.WhiteOutlined{
+    width: 180px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #ffd1dc4d;
+    border: 2px solid #FFD1DC;
+    color: #ffffff;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+                rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+                rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    transition: background ease 300ms;
+    text-decoration: none;
+    text-align: center;
+}
+.WhiteOutlinedBtn{
+    width: 120px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: transparent;
+    border-color: #FFD1DC;
+    color: #FFD1DC;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+        rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    transition: background ease 300ms;
+}
+.WhiteOutlined:hover{
+    opacity: 0.9;
+    cursor: pointer;
+    box-shadow: rgba(255, 255, 255, 0.15) 0px 1px 1px 0px inset,
+        rgba(50, 50, 93, 0.30) 0px 60px 120px -20px,
+        rgba(0, 0, 0, 0.35) 0px 40px 80px -30px;
+}
+
+.BlackOutlined {
+    width: 50px;
+    height: 15px;
+    border-radius: 20px;
+    background-color: transparent;
+    border-color: #FFD1DC;
+    color: #FFD1DC;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+        rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    transition: background ease 300ms;
+}
+.BlackOutlined:hover {
+    opacity: 0.9;
+    cursor: pointer;
+    box-shadow: rgba(255, 255, 255, 0.15) 0px 1px 1px 0px inset,
+        rgba(50, 50, 93, 0.30) 0px 60px 120px -20px,
+        rgba(0, 0, 0, 0.35) 0px 40px 80px -30px;
+}
+
+
+/* Image styles */
+
+.WavesBorders{
+    --s: 20px;
+    /* control the size of the wave */
+    --w: 350px;
+    /* preferred image width */
+
+    width: round(var(--w), 4*var(--s));
+    aspect-ratio: 1;
+    padding: calc(3.5*var(--s));
+    box-sizing: border-box;
+    background: linear-gradient(#FFD1DC, #FFA500);
+    border-radius: calc(4*var(--s));
+    --_g: conic-gradient(#000 0 0) no-repeat 50%/;
+    mask:
+        radial-gradient(var(--s), #000 100%, #0000 calc(100% + 1px)) 0 0/calc(4*var(--s)) calc(4*var(--s)),
+        var(--_g) calc(100% - 6*var(--s)) calc(100% - 6*var(--s)),
+        var(--_g) calc(100% - 4*var(--s)) calc(100% - 4*var(--s)) intersect,
+        radial-gradient(var(--s), #0000 calc(100% - 1px), #000) var(--s) var(--s)/calc(2*var(--s)) calc(2*var(--s));
+}
+
+
+/* Icons */
+
+
+.MobileIcon{
+    font-size: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    transition: all 300ms ease;
+}
+
+.LargeIcon{
+    font-size: 28px;
+    width: 32px;
+    height: 32px;
+    border-radius: 35px;
+    transition: all 300ms ease;
+}
+
+
+/* Containers */
+
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 var(--space-4);
+    max-width: var(--container-sm);
+}
+
+@media (min-width: 900px) {
+    .container {
+        max-width: var(--container-md);
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: var(--container-lg);
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: var(--container-xl);
+    }
+}
+
+/* Cards */
+
+
+/* Logo */
+
+.Logo{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+
+
+/* Filters */
+
+.filterOrange {
+    position: absolute;
+    inset: 0;
+    z-index: 5;
+    background-color: #ffa6007b;
+    backdrop-filter: blur(3.2px);
+    -webkit-backdrop-filter: blur(7.2px);
+}
+.filterPink {
+    position: absolute;
+    inset: 0;
+    z-index: 5;
+    background-color: #874e587d;
+    backdrop-filter: blur(3.2px);
+    -webkit-backdrop-filter: blur(7.2px);
+}
+
+
+/* Blur */
+
+.pink-blur{
+    background: rgba(255, 182, 193, 0.54);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(12.1px);
+    -webkit-backdrop-filter: blur(12.1px);
+    border: 1px solid rgba(255, 182, 193, 0.53);
+}
+
