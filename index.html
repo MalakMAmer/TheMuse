@@ -143,11 +143,51 @@
 
         
         <!-- Join/Contact -->
+         <section class="ContactSection">
+            <div class="icon">
+                
+            </div>
+            <div>
+                <h3>Join the Luminary List</h3>
+                <p>Join our curated membership for early access to digital tours, virtual reality exhibitions,
+                and private artist talks.</p>
+                <form action="/" method="post">
+                    <input type="text" placeholder="Enter Your Email Address">
+                    <button>Subscribe</button>
+                </form>
+            </div>
+         </section>
 
-     </main>
-     
-
-
+    </main>
+    
     <!-- Footer -->
+    <footer>
+        <div>
+            <h2>The Muse Museum</h2>
+            <p>©<span id="copyrightYear"></span> The Muse Museum. Illuminated Curation.</p>
+        </div>
+        <div>
+            <ul>
+                <li>Exhibtions</li>
+                <li>Tours</li>
+                <li>Members</li>
+            </ul>
+            <ul>
+                <li>Privacy</li>
+                <li>Terms</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>icon</li>
+                <li>icon</li>
+                <li>icon</li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("copyrightYear").textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
