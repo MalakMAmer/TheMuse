@@ -12,11 +12,13 @@
     box-sizing: border-box;
 }
 
+
 :root {
 
     /* Colors */
 
     --primary: #FFB6C1;
+    --primary-background: #FFB6C140;
     --secondary: #FFA500;
     --secondary-darker: #ba7900;
     --tertiary: #FFD1DC;
@@ -97,7 +99,7 @@ html {
 
 body {
     font-family: var(--font-body);
-    background-color: var(--neutral);
+    background-color: var(--primary-background);
     color: var(--black);
 }
 
