@@ -18,12 +18,14 @@
     <!-- Nav -->
     <nav>
         <div class="Logo">
-            <img src="./Images/logo.svg" alt="Logo" class="">
+            <a href="/index.html">
+                <img src="./Images/logo.svg" alt="Logo" class="">
+            </a>
         </div>
 
 
         <input type="checkbox" id="menu-toggle">
-        <label for="menu-toggle" class="burger">
+        <label for="menu-toggle" class="burger" id="menutogglesIcon">
             ☰
         </label>
         <div id="listContainer">
@@ -57,7 +59,7 @@
         <!-- Hero Section -->
         <header>
             <div id="HeroImageContainer">
-                <img src="./Images/museumMobile1.jpg" alt="hero background">
+                <img src="./Images/museumMobile1.jpg" alt="hero background" id="heroImg">
                 <div class="filterBrown"></div>
                 
             </div>
@@ -191,6 +193,51 @@
 
     <script>
         document.getElementById("copyrightYear").textContent = new Date().getFullYear();
+        
+        var menuToggle = document.getElementById("menu-toggle");
+        var menutogglesIcon = document.getElementById("menutogglesIcon");
+        var listContainer = document.getElementById("listContainer");
+
+        menuToggle.addEventListener("change", () => {
+            
+            menutogglesIcon.style.opacity = "0";
+            menutogglesIcon.style.transform = "scale(1.3)";
+
+            setTimeout(() => {
+
+                // Change icon
+                menutogglesIcon.textContent = menuToggle.checked ? "X" : "☰";
+
+                menutogglesIcon.style.opacity = "1";
+                menutogglesIcon.style.transform = "scale(1)";
+
+            }, 200);
+
+
+            listContainer.classList.toggle(
+                "active",
+                menuToggle.checked
+            );
+        });
+
+
+
+        var heroImg = document.getElementById("heroImg");
+
+        function myFunction(x) {
+            if (x.matches) {
+                heroImg.setAttribute("src", "./Images/museumMobile1.jpg");
+            } else {
+                heroImg.setAttribute("src", "./Images/museLap.jpg");
+            }
+        }
+
+        var x = window.matchMedia("(max-width: 700px)")
+        myFunction(x);
+        x.addEventListener("change", function () {
+            myFunction(x);
+        });
+
     </script>
 </body>
 </html>

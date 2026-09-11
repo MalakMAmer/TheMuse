@@ -18,7 +18,6 @@ nav .Logo img {
     
 }
 
-/* Hide checkbox */
 
 nav #menu-toggle {
     display: none;
@@ -30,12 +29,14 @@ nav .burger {
     font-size: 2.2rem;
     cursor: pointer;
     color: var(--secondary);
+    text-align: center;
+    align-self: center;
+    transition: all 400ms ease;
 }
 
 /* List container */
 
 nav #listContainer {
-    display: none;
     position: absolute;
     top: 100%;
     left: 0;
@@ -48,13 +49,22 @@ nav #listContainer {
     -webkit-backdrop-filter: blur(7.2px);
     border: 2px solid var(--secondary-darker-trans);
     z-index: 10;
-    transition: all 200ms ease;
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-5px);
+    transition:
+        opacity 300ms ease,
+        transform 300ms ease,
+        visibility 300ms ease;
+    pointer-events: none;
 }
 
-/* Show menu when checked */
-
-nav #menu-toggle:checked~#listContainer {
-    display: block;
+nav #listContainer.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+    pointer-events: auto;
 }
 
 nav #listContainer ul {
@@ -68,7 +78,7 @@ nav #listContainer ul {
 
 nav #listContainer ul li.navListElements {
     padding: 5px;
-    font-family: var(--font-body);
+    font-family: var(--flipa);
     transition: all 500ms ease;
 }
 
@@ -78,7 +88,8 @@ nav #listContainer ul li.navListElements:hover {
 
 nav #listContainer ul li.navListElements a {
     text-decoration: none;
-    color: var(--light-black-text);
+    color: var(--light-brown);
+    font-size: 20px;
 }
 
 /* Larger screens */
@@ -90,19 +101,36 @@ nav #listContainer ul li.navListElements a {
     }
 
     nav #listContainer {
+        padding: 0;
+        border-radius: none;
+        box-shadow: none;
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+        border: none;
+        z-index: 0;
         display: block;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
         box-shadow: none;
         position: static;
         width: auto;
         background: none;
         padding: 0;
+        pointer-events: auto;
+
     }
 
     nav #listContainer ul {
         flex-direction: row;
         gap: 20px;
     }
-
+    
+    nav #listContainer ul li.navListElements a {
+        text-decoration: none;
+        color: var(--secondary);
+        font-size: 22px;
+    }
 }
 
 /* Main Container Styles */
@@ -148,6 +176,11 @@ main header div.btnContainer{
 }
 main header div a.heroBtn{
     width: 250px;
+}
+
+/* larger screens for hero section */
+@media (min-width: 768px) {
+    
 }
 
 
