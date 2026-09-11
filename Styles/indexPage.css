@@ -6,7 +6,7 @@ nav {
     align-items: center;
     padding: 10px;
     position: relative;
-    background-color: var(--neutral);
+    background-color: var(--secondary-darker-trans);
     backdrop-filter: blur(7.2px);
     -webkit-backdrop-filter: blur(7.2px);
     z-index: 100;
@@ -29,7 +29,7 @@ nav #menu-toggle {
 nav .burger {
     font-size: 2.2rem;
     cursor: pointer;
-    color: var(--dark-pink);
+    color: var(--secondary);
 }
 
 /* List container */
@@ -40,14 +40,15 @@ nav #listContainer {
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: var(--neutral);
+    background-color: var(--primary);
     padding: 15px 0;
     border-radius: 0 0 16px 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(7.2px);
     -webkit-backdrop-filter: blur(7.2px);
-    border: 1px solid rgba(255, 255, 255, 0.01);
+    border: 2px solid var(--secondary-darker-trans);
     z-index: 10;
+    transition: all 200ms ease;
 }
 
 /* Show menu when checked */
@@ -178,7 +179,7 @@ section#mession div#LeftMessionSec h1 {
     line-height: 1.2;
     padding: 0 10px;
     padding-bottom: 20px;
-    color: var(--dark-pink);
+    color: var(--light-pink);
 }
 section#mession div#LeftMessionSec p#mainP {
     text-align: justify;
@@ -246,22 +247,23 @@ section#featuresPieces div#headerOfFeaturesPieces h1{
     line-height: 1.2;
     padding: 0 10px;
     padding-bottom: 20px;
-    color: var(--dark-pink);
+    color: var(--light-pink);
 }
 section#featuresPieces div#headerOfFeaturesPieces a{
     text-decoration: none;
     color: var(--secondary-darker);
     text-align: end;
     display: block;
-    padding: 40px 20px;
+    padding: 20px 20px;
     padding-bottom: 10px;
     animation: glowLink 1s ease infinite;
 }
-section#featuresPieces div#headerOfFeaturesPieces a i{
+section#featuresPieces div#headerOfFeaturesPieces a p{
     color: var(--secondary-darker);
     text-align: end;
     align-self: flex-end;
     animation: arrowAnimation 1s ease infinite;
+    display: inline-block;
 }
 
 
@@ -270,7 +272,7 @@ section#featuresPieces div#Gallery{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
 }
 section#featuresPieces div#Gallery div.artWorkesContainer{
     padding: 10px;
@@ -281,11 +283,11 @@ section#featuresPieces div#Gallery div.artWorkesContainer{
 }
 section#featuresPieces div#Gallery div.artWorkesContainer img{
     width: 90%;
-    border: 6px solid var(--secondary-darker);
     box-shadow: var(--orange-shadow-lighter);
     animation: spinningShadowOrangeLighter 4s ease infinite;
     border-radius: 5px;
     transition: transform ease 500ms;
+    background-color:var(--white);
 }
 section#featuresPieces div#Gallery div.artWorkesContainer img:hover {
     /* transform: scale(1.1);   for disktop*/
@@ -302,6 +304,9 @@ section#featuresPieces div#Gallery div.artWorkesContainer p.author{
     font-family: var(--moon);
     padding-bottom: 10px;
 }
+
+/* will be invisable for now */
+
 section#featuresPieces div#Gallery div.artWorkesContainer div.innerViewContainer{
     width: 90%;
     display: flex;
@@ -310,12 +315,13 @@ section#featuresPieces div#Gallery div.artWorkesContainer div.innerViewContainer
     padding: 10px;
     border-radius: 10px;
     background-color: var(--neutral);
-    border: 1px solid var(--dark-pink);
-    color: var(--dark-pink);
+    border: 1px solid var(--light-pink);
+    color: var(--light-pink);
+    display: none;
 }
 section#featuresPieces div#Gallery div.artWorkesContainer div.innerViewContainer a{
     text-decoration: none;
-    color: var(--dark-pink);
+    color: var(--light-pink);
 }
 section#featuresPieces div#Gallery div.artWorkesContainer div.innerViewContainer i{
 

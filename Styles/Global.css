@@ -17,15 +17,17 @@
 
     /* Colors */
 
-    --primary: #FFB6C1;
+    --primary: #291B01;
     --primary-background: #FFB6C140;
     --secondary: #FFA500;
     --secondary-darker: #ba7900;
+    --secondary-darker-trans: #ba790080;
     --tertiary: #FFD1DC;
     --neutral:#FDFCFB;
-    --dark-pink: #874E58;
-    --light-black-text: #514345;
+    --light-pink: #c6adb2;
+    --light-black-text: #857073;
     --light-pink-dark-text: #664348;
+
 
 
     /* Fonts */
@@ -99,8 +101,8 @@ html {
 
 body {
     font-family: var(--font-body);
-    background-color: var(--neutral);
-    color: var(--black);
+    background-color: var(--primary);
+    color: black;
 }
 
 
