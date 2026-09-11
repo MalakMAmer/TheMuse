@@ -22,7 +22,7 @@
     width: fit-content;
     padding: 10px 30px;
     border-radius: 20px;
-    background: linear-gradient(135deg, #FFB6C1 0%, #874E58 100%);
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary-darker) 100%);
     color: white;
     text-decoration: none;
     text-align: center;
@@ -67,7 +67,7 @@
     width: 180px;
     height: 30px;
     border-radius: 20px;
-    background: #FFB6C1;
+    background: var(--primary);
     background: linear-gradient(70deg, rgba(255, 182, 193, 1) 0%, rgba(255, 165, 0, 1) 100%);
     box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
         rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
@@ -77,14 +77,14 @@
     text-align: center;
 }
 .Primary:hover{
-    background: #FFB6C1;
+    background: var(--primary);
     cursor: pointer;
     box-shadow: rgba(255, 255, 255, 0.15) 0px 1px 1px 0px inset,
                 rgba(50, 50, 93, 0.30) 0px 60px 120px -20px,
                 rgba(0, 0, 0, 0.35) 0px 40px 80px -30px;
 }
 .Primary:active{
-    background: #FFB6C1;
+    background: var(--primary);
     opacity: 0.9;
     cursor: pointer;
     box-shadow: rgba(255, 255, 255, 0.15) 0px 1px 1px 0px inset,
@@ -92,7 +92,7 @@
         rgba(0, 0, 0, 0.35) 0px 40px 80px -30px;
 }
 .PrimaryBtn:hover {
-    background: #FFB6C1;
+    background: var(--primary);
     cursor: pointer;
     box-shadow: rgba(255, 255, 255, 0.15) 0px 1px 1px 0px inset,
         rgba(50, 50, 93, 0.30) 0px 60px 120px -20px,
@@ -104,7 +104,7 @@
     width: 180px;
     padding: 10px 20px;
     border-radius: 20px;
-    background-color: #874E58;
+    background-color: var(--secondary-darker-trans);
     box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
         rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
         rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
@@ -117,7 +117,7 @@
     width: 180px;
     height: 30px;
     border-radius: 20px;
-    background-color: #874E58;
+    background-color: var(--secondary-darker-trans);
     box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
                 rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
                 rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
@@ -150,8 +150,8 @@
     width: 180px;
     padding: 10px 20px;
     border-radius: 20px;
-    background-color: #ffd1dc4d;
-    border: 2px solid #FFD1DC;
+    background-color: var(--secondary-darker-trans);
+    border: 2px solid var(--secondary-darker);
     color: #ffffff;
     box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
                 rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
@@ -295,15 +295,22 @@
     backdrop-filter: blur(3.2px);
     -webkit-backdrop-filter: blur(7.2px);
 }
+.filterBrown {
+    position: absolute;
+    inset: 0;
+    z-index: 5;
+    background-color: #5341197d;
+    backdrop-filter: blur(3.2px);
+    -webkit-backdrop-filter: blur(7.2px);
+}
 .filterPink {
     position: absolute;
     inset: 0;
     z-index: 5;
-    background-color: #874e587d;
+    background-color: #5341197d;
     backdrop-filter: blur(3.2px);
     -webkit-backdrop-filter: blur(7.2px);
 }
-
 
 /* Blur */
 
