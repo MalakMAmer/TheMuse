@@ -124,6 +124,25 @@ p {
     font-size: var(--text-body);
 }
 
+a{
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    outline: none;
+    /* For WebKit-based browsers like Safari on iOS */
+    background-color: transparent;
+    /* For all browsers */
+}
+
+a:focus,
+a:focus-visible,
+a:active {
+    outline: none;
+    box-shadow: none;
+    background: transparent;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+}
+
 .flex-center {
     display: flex;
     justify-content: center;

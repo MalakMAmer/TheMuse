@@ -33,6 +33,20 @@ nav .burger {
     align-self: center;
     transition: all 400ms ease;
 }
+nav .burger,
+nav #menutogglesIcon {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    outline: none;
+}
+
+nav .burger:focus,
+nav .burger:active,
+nav #menutogglesIcon:focus,
+nav #menutogglesIcon:active {
+    outline: none;
+    box-shadow: none;
+}
 
 /* List container */
 
@@ -297,6 +311,21 @@ section#featuresPieces div#headerOfFeaturesPieces a p{
     align-self: flex-end;
     animation: arrowAnimation 1s ease infinite;
     display: inline-block;
+}
+
+section#featuresPieces div#headerOfFeaturesPieces a p,
+section#featuresPieces div#headerOfFeaturesPieces a {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    outline: none;
+}
+
+section#featuresPieces div#headerOfFeaturesPieces a p:focus,
+section#featuresPieces div#headerOfFeaturesPieces a:focus,
+section#featuresPieces div#headerOfFeaturesPieces a p:active,
+section#featuresPieces div#headerOfFeaturesPieces a:active{
+    outline: none;
+    box-shadow: none;
 }
 
 
