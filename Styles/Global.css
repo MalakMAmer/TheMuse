@@ -133,7 +133,7 @@ a{
     /* For all browsers */
 }
 
-a:focus,
+a:focus
 a:focus-visible,
 a:active {
     outline: none;

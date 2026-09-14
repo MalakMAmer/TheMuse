@@ -391,4 +391,69 @@ section#featuresPieces div#Gallery div.artWorkesContainer div.innerViewContainer
 
 /* Join Section */
 
+section#ContactSection{
+    color: var(--primary);
+    background-color: var(--secondary-darker-trans);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5rem 20px;
+}
+section#ContactSection div{
 
+}
+section#ContactSection div h3{
+    font-size: 40px;
+    padding: 15px;
+}
+section#ContactSection div p{
+    color: var(--secondary);
+    opacity: 0.8;
+    font-size: 26px;
+    font-family: var(--moon);
+}
+section#ContactSection div form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+    gap: 10px;
+}
+section#ContactSection div form input{
+    width: 90%;
+    padding: 10px;
+    padding-left: 7px;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    text-align: center;
+    font-family: var(--flipa);
+    color: var(--secondary-darker);
+    transition: transform 200ms ease;
+}
+section#ContactSection div form input::placeholder {
+    color: var(--light-brown);
+}
+section#ContactSection div form input:focus {
+    border: none;
+    outline: none;
+    transform: scale(1.02);
+}
+section#ContactSection div form button{
+    width: 90%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--light-brown);
+    font-size: 18px;
+    font-family: var(--playfair);
+}
+
+
+/* footer */
+
+footer{
+    color: var(--white);
+}
